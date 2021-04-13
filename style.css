@@ -322,6 +322,89 @@ section.designed img {
     width: 800px;
 }
 
+section.designed img.left-arrow {
+    width: 30px;
+    margin-right: 2rem;
+}
+
+section.designed img.right-arrow {
+    width: 30px;
+    margin-left: 2rem;
+}
+
+section.designed p.carousel-comment {
+    text-align: center;
+    font-size: 1rem;
+    margin: 2rem 25rem;
+    margin-bottom: 1rem;
+}
+
+section.designed .dots {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    border: solid 2px #006aff;
+  }
+
+.dot:active {
+    background-color: #006aff;
+}
+
+.dot:hover {
+    background-color: #a4c3ee;
+}
+
+section.business h2 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(3,27,78,7);
+    margin-bottom: 3rem;
+}
+
+section.business .business-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 325px);
+    width: 1200px;
+    margin: auto;
+    grid-gap: 8rem;
+}
+
+section.business .business-grid svg {
+    margin-bottom: 2rem;
+}
+
+section.business .business-grid h3 {
+    color: rgba(3,27,78,7);
+    margin-bottom: 1rem;
+}
+
+section.business .business-grid p {
+   color:  rgba(3,27,78,.7);
+   line-height: 1.5rem;
+   margin-bottom: 2rem;
+}
+
+section.business .business-grid a {
+    color: #006aff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+section.business .business-grid svg {
+    width: 20px;
+}
+
+
 
 
 

@@ -150,10 +150,10 @@ section.hero form button.google {
     background-color: white;
     color: grey;
     border: solid 1px lightgray;
-    display: grid;
-    grid-template-columns: 30px 1fr;
     align-items: center;
     box-shadow: lightgray 1px 1px;
+    text-align: center;
+    position: relative;
 }
 
 section.hero form button.google:hover {
@@ -162,8 +162,8 @@ section.hero form button.google:hover {
 
 section.hero form button.google img.google-icon {
     width: 20px;
-    margin-left: 1rem;
-
+    position: absolute;
+    left: 10px;
 }
 section.hero form p.t-c {
     font-size: 0.75rem;
@@ -171,11 +171,156 @@ section.hero form p.t-c {
     color: rgba(3,27,78,.7);
 }
 
+section.trust h3.trust {
+    color: gray;
+    padding-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 
+section.trust div.logos {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    margin-left: 20rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    place-items: center;
+}
 
+section.trust img.logos {
+    width: 100px;
+    
+}
 
+section.trust p {
+    text-align: center;
 
+}
 
+section.trust p a {
+    color: #0069ff;
+    text-decoration: none;
+    padding-bottom: 3rem;
+}
+
+section.trust p svg {
+    width: 20px;
+    padding-bottom: 3rem;
+}
+
+section.deploy h2 {
+    margin-top: 3rem;
+    text-align: center;
+    color: #031b4e;
+    font-size: 2.5rem;
+}
+
+section.deploy p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    margin: 2rem 8rem;
+    color: rgba(3,27,78,.7);
+    font-weight: 300;
+}
+
+section.deploy div.deploy {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    padding-top: 2rem;
+}
+
+section.deploy ul {
+    margin-left: 20rem;
+    margin-top: 2rem;
+}
+
+section.deploy ul li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+section.deploy ul li a {
+    color: rgba(3,27,78,.7);
+    text-decoration: none;
+}
+
+section.deploy ul li a:hover {
+    color: rgba(3,27,78,7);
+}
+
+section.deploy ul li a:active {
+    color: #031b4e;
+}
+
+section.deploy .list-grid {
+    display: grid;
+    grid-template: "kubernetes compute" 250px
+                    "marketplace global" 250px/
+                    250px 250px;
+    grid-gap: 1rem;
+    
+}
+
+section.deploy .list-grid h3 {
+    color: #031b4e;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+section.deploy .list-grid p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+    margin-top: 1rem;
+    color:rgba(3,27,78,.7);
+    line-height: 1.5rem;
+}
+
+section.deploy .list-grid .kubernetes {
+    grid-area: kubernetes;
+}
+
+section.deploy .list-grid .compute {
+    grid-area: compute;
+}
+
+section.deploy .list-grid .marketplace {
+    grid-area: marketplace;
+}
+
+section.deploy .list-grid .global {
+    grid-area: global;
+}
+
+section.designed {
+    background-color: whitesmoke;
+}
+
+section.designed h2 {
+    color:rgba(3,27,78,7);
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 2.6rem;
+}
+
+section.designed p {
+    color:rgba(3,27,78,.7);
+    margin: 4rem 15rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+section.designed .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+section.designed img {
+    width: 800px;
+}
 
 
 

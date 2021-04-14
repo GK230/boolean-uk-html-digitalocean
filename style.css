@@ -376,6 +376,7 @@ section.business .business-grid {
     width: 1200px;
     margin: auto;
     grid-gap: 8rem;
+    padding-bottom: 2rem;
 }
 
 section.business .business-grid svg {
@@ -400,11 +401,151 @@ section.business .business-grid a {
     font-size: 1rem;
 }
 
-section.business .business-grid svg {
+section.business .business-grid svg.bottom {
+    display: inline-block;
+    fill: #006aff;
     width: 20px;
+    margin: 0;
 }
 
 
+section.customers {
+    background-image: url("https://thumbs.dreamstime.com/t/light-blue-world-map-dark-blue-background-elements-i-image-furnished-nasa-97081463.jpg");
+}
+
+section.customers h2 {
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    width: 50rem;
+    margin: auto;
+}
+
+section.customers .world-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-gap: 3rem;
+    margin: 3rem 5rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+section.customers .world-grid p {
+    display: inline-block;
+}
+
+section.customers .world-grid1, .world-grid2 {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    position: relative;
+    align-items: center;
+}
+
+section.customers .world-grid p.code {
+    margin-right: 2rem;
+}
+
+section.customers .world-grid p.speed {
+    margin-left: 10rem;
+    position: absolute;
+    right: 30px;
+}
+
+section.customers .world-grid svg {
+    margin-left: 10rem;
+    position: absolute;
+    right: 10px;
+    padding-top: 3px;
+    
+}
+
+section.customers .world-grid svg {
+    width: 10px;
+    margin-left: 5px;
+}
+
+
+
+
+section.dev {
+    background-color: whitesmoke;
+}
+
+section.dev h2 {
+    font-size: 2.5rem;
+    color: rgba(3,27,78,7);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+section.dev .carousel {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    place-items: center;
+}
+
+section.dev img.arrow {
+    width: 20px;
+}
+
+section.dev img.left {
+    justify-self: right;
+}
+
+section.dev img.right {
+    justify-self: left;
+}
+
+section.dev .quote {
+    width: 800px;
+    height: 400px;
+    margin: 2rem auto;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+section.dev .quote img {
+    width: 200px;
+    margin: 1rem auto;
+    display: block;
+}
+
+section.dev .quote blockquote {
+    text-align: center;
+    color: rgba(3,27,78,.7);
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+
+section.dev .carousel .quote p {
+    margin-top: 1.5rem;
+    color: gray;
+    text-align: center;
+}
+
+section.dev .carousel .quote .link {
+    margin-top: 2rem;
+}
+
+section.dev .carousel .quote a.read {
+    text-decoration: none;
+    color: #006aff;
+}
+
+section.dev .carousel .quote svg {
+    width: 12px;
+    fill: #006aff;
+}
+
+section.dev .dots {
+    text-align: center;
+    padding-bottom: 3rem;
+}
 
 
 

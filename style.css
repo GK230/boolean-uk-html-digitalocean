@@ -19,8 +19,17 @@ nav .logo {
     display: inline-block;
 }
 
+
+
 nav img.logo {
     width: 200px;
+}
+
+nav .main-nav svg {
+    fill: grey;
+    width: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 nav .main-nav {
@@ -193,6 +202,18 @@ section.trust img.logos {
     
 }
 
+section.trust .view {
+    display: grid;
+    grid-template-columns: 100px 30px;
+    margin: 2rem 20rem;
+}
+
+section.trust svg {
+    fill: #0069ff;
+    width: 20px;
+    margin-top: 20px;
+}
+
 section.trust p {
     text-align: center;
 
@@ -204,9 +225,15 @@ section.trust p a {
     padding-bottom: 3rem;
 }
 
-section.trust p svg {
-    width: 20px;
+section.trust p .svg-grid {
+    width: 15px;
     padding-bottom: 3rem;
+}
+
+section.trust svg {
+    width: 10px;
+    font-weight: bold;
+
 }
 
 section.deploy h2 {
@@ -234,12 +261,19 @@ section.deploy div.deploy {
 section.deploy ul {
     margin-left: 20rem;
     margin-top: 2rem;
+    border-left: solid 1px grey;
+
 }
 
 section.deploy ul li {
     list-style: none;
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
+    padding-left: 2rem;
+}
+
+section.deploy ul li:active {
+    border-left: solid 1px #031b4e;
 }
 
 section.deploy ul li a {
@@ -401,11 +435,19 @@ section.business .business-grid a {
     font-size: 1rem;
 }
 
+section.business .business-grid .svg-grid {
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    width: 50px;
+}
+
+
 section.business .business-grid svg.bottom {
     display: inline-block;
     fill: #006aff;
     width: 20px;
-    margin: 0;
+    margin: 0px;
 }
 
 
@@ -605,6 +647,11 @@ footer .footer-grid {
     display: grid;
     grid-template-columns: 1fr repeat(4, 250px);
     padding-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+footer .footer-grid .logo-section img {
+    margin-bottom: 2rem;
 }
 
 footer ul li {
@@ -622,6 +669,16 @@ footer ul li:hover {
 footer ul li.heading {
     color: whitesmoke;
     margin: 20px 0;
+}
+
+footer .footer-grid .logo-section .icons svg.icon {
+    fill: rgba(135, 137, 141, 0.7);
+    margin-right: 1rem;
+}
+
+footer .footer-grid .logo-section .icons svg.icon:hover {
+    fill: whitesmoke;
+    transition: 1s;
 }
 
 

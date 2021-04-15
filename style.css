@@ -788,5 +788,19 @@ footer .footer-grid .logo-section .icons svg.icon:hover {
 
 }
 
+@media only screen and (max-width: 985px) {
+
+    section.hero {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    section.trust .logos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 
 
+
+}

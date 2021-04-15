@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100vw;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+
 }
 
 nav {
@@ -186,14 +194,15 @@ section.trust h3.trust {
     text-align: center;
     text-transform: uppercase;
     font-size: 1rem;
+    
 }
 
 section.trust div.logos {
     display: grid;
     grid-template-columns: repeat(6, 150px);
-    margin-left: 20rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 2rem auto;
+    width: 800px;
+    
     place-items: center;
 }
 
@@ -369,7 +378,7 @@ section.designed img.right-arrow {
 section.designed p.carousel-comment {
     text-align: center;
     font-size: 1rem;
-    margin: 2rem 25rem;
+    width: 500px;
     margin-bottom: 1rem;
 }
 
@@ -679,6 +688,104 @@ footer .footer-grid .logo-section .icons svg.icon {
 footer .footer-grid .logo-section .icons svg.icon:hover {
     fill: whitesmoke;
     transition: 1s;
+}
+
+@media only screen and (min-width: 1135px) {
+    nav svg.menu {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1135px) {
+    
+    nav .main-nav { 
+        display: none;
+    }
+
+    nav .sign-in {
+        display: none;
+    }
+
+    nav svg.menu {
+        display: inline-block;
+        width: 30px;
+        fill: #006aff;
+        position: absolute;
+        right: 1rem;
+    }
+
+    section.hero .form {
+        margin-top: 6rem;
+    }
+
+    section.trust .logos {
+        margin: 0 auto;
+    }
+
+    section.deploy div.deploy {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    section.deploy ul {
+        margin-left: 4rem;
+    }
+
+    section.designed .carousel-container {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    section.designed p.carousel-comment {
+        text-align: center;
+
+    }
+
+    section.business .business-grid {
+        grid-template-columns: repeat(3, 200px);
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    section.customers .world-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        background-color: red;
+    }
+
+    section.dev .carousel {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .footer-grid {
+        grid-template: "logo-section logo-section" 100px
+                        "company products" 1fr
+                        "community support" 1fr/
+                        1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    footer .footer-grid .logo-section {
+        grid-area: logo-section;
+    }
+
+    footer .footer-grid .company {
+        grid-area: company;
+    }
+
+    footer .footer-grid .products {
+        grid-area: products;
+    }
+
+    footer .footer-grid .community {
+        grid-area: community;
+    }
+
+    footer .footer-grid .support {
+        grid-area: support;
+    }
+
 }
 
 
